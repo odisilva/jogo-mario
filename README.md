@@ -23,4 +23,4 @@ O jogo consiste em um Mario que está se movendo para a direita da tela. O usuá
 
 1. Faça o **download** ou **clone** do repositório:
    ```bash
-   git clone https://github.com/SEU-USUARIO/mario-jump-game.git
+   git clone https://github.com/odisilva/jogo-mario.git
