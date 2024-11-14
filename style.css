@@ -104,6 +104,31 @@
     }
 }
 
+/* Ajustes gerais para telas menores */
+@media (max-width: 600px) {
+    .game-board {
+        height: 300px; /* Reduz a altura para caber na tela */
+    }
+
+    .mario {
+        width: 100px; /* Ajuste o tamanho do Mario para telas menores */
+    }
+
+    .pipe {
+        width: 50px; /* Ajuste o tamanho do obstáculo */
+    }
+
+    .restart-btn {
+        font-size: 16px; /* Reduza o tamanho da fonte do botão */
+        padding: 10px 20px; /* Ajuste o espaçamento */
+    }
+
+    .score {
+        font-size: 24px; /* Ajuste o tamanho da pontuação */
+    }
+}
+
+
 /* Estilo do display da pontuação */
 .score-board {
     position: absolute;

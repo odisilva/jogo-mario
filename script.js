@@ -40,14 +40,16 @@ const loop = setInterval(() => {
     }
 }, 10); // Intervalo do loop
 
+document.addEventListener('keydown', jump); // Pulo para teclado
+
+document.addEventListener('touchstart', jump); // Pulo para toque na tela
+
 // Função para reiniciar o jogo
 const restartGame = () => {
     location.reload(); // Recarrega a página, reiniciando o jogo
 }
 
-// Evento de pulo ao pressionar qualquer tecla
-document.addEventListener('keydown', jump);
-
 // Evento de clique para reiniciar o jogo
 restartButton.addEventListener('click', restartGame);
+
 
