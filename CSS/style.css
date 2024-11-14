@@ -1,9 +1,11 @@
+/* Resetando margens e preenchimento */
 * {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 
+/* Estilo da área de jogo */
 .game-board {
     width: 100%;
     height: 500px;
@@ -11,9 +13,10 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#87CEEB, #E0F6FF);
+    background: linear-gradient(#87CEEB, #E0F6FF); /* Fundo azul claro */
 }
 
+/* Estilo do tubo (pipe) */
 .pipe {
     position: absolute;
     bottom: 0;
@@ -21,65 +24,94 @@
     right: -80px;
     animation: pipe-animation 1.5s infinite linear;
 }
+
+/* Estilo do Mario */
 .mario {
     width: 150px;
     position: absolute;
     bottom: 0;
-
 }
 
+/* Animação de pulo do Mario */
 .jump {
     animation: jump 500ms ease-out;
-
 }
 
+/* Estilo das nuvens */
 .clouds {
     position: absolute;
     width: 350px;
     animation: clouds-animation 20s infinite linear;
 }
 
+/* Estilo do botão de reiniciar */
+.restart-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6347; /* Cor de fundo vermelha */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none; /* Inicialmente escondido */
+    cursor: pointer;
+    z-index: 10; /* Certifique-se de que o botão fique acima de outros elementos */
+}
+
+.restart-btn:hover {
+    background-color: #ff4500; /* Cor do botão ao passar o mouse */
+}
+
+/* Animação do tubo (pipe) */
 @keyframes pipe-animation {
     from {
-       right: -80px; 
+       right: -80px;
     }
     to {
-       right: 100%; 
+       right: 100%;
     }
 }
 
+/* Animação de pulo */
 @keyframes jump {
-
     0% {
        bottom: 0; 
     }
-
     40% {
        bottom: 180px; 
     }
-
     50% {
        bottom: 180px;
     }
-
     60% {
        bottom: 160px; 
     }
-
     100% {
-
        bottom: 0; 
     }
-
-
 }
 
+/* Animação das nuvens */
 @keyframes clouds-animation {
     from {
         right: -350px;
     }
-    
     to {
         right: 100%;
     }
+}
+
+/* Estilo do display da pontuação */
+.score-board {
+    position: absolute;
+    top: 10%; /* Posição do topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza com precisão */
+    font-size: 30px; /* Tamanho da fonte */
+    color: #FFF; /* Cor branca */
+    font-family: Arial, sans-serif; /* Fonte */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra do texto */
 }

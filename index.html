@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./CSS/style.css">
-    <script src="./js/script.js"defer></script>
-
+    <script src="./js/script.js" defer></script>
     <title>Mario Jump</title>
 </head>
 <body>
     <div class="game-board">
-        
+        <!-- Adicionamos a pontuação aqui -->
+        <div class="score-board">
+            <span id="score">0</span> Pontos <!-- A pontuação vai aparecer aqui -->
+        </div>
         <img src="./Imagens/clouds.png" class="clouds">
         <img src="./Imagens/mario.gif" class="mario">
         <img src="./Imagens/pipe.png" class="pipe">
-
     </div>
-    
+
+    <button class="restart-btn">Reiniciar</button> <!-- Botão de reiniciar -->
+
 </body>
 </html>
