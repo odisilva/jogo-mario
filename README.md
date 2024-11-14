@@ -24,3 +24,22 @@ O jogo consiste em um Mario que está se movendo para a direita da tela. O usuá
 1. Faça o **download** ou **clone** do repositório:
    ```bash
    git clone https://github.com/odisilva/jogo-mario.git
+## 📖 **Funções do Jogo**
+
+### **Função `jump()`**
+Esta função é responsável por fazer o Mario pular quando o usuário pressiona a tecla **"Espaço"**. A animação de pulo é gerenciada pelo **CSS**, alterando a posição do Mario na tela.
+
+### **Loop do Jogo**
+O jogo possui um **loop contínuo** onde o Mario se move para a direita, e o inimigo (Itrante) se aproxima dele. O loop verifica a colisão entre Mario e o inimigo e reinicia o jogo quando há uma colisão.
+
+### **Eventos de Teclado**
+O **JavaScript** escuta o evento de pressionamento da tecla **"Espaço"** para acionar a função de pulo.
+
+## 📱 **Jogo Responsivo**
+O jogo é projetado para ser jogado diretamente em navegadores de **dispositivos móveis e desktop**, com a interface ajustando-se conforme o tamanho da tela.
+
+## 👨‍💻 **Contribuição**
+Se desejar contribuir com o projeto, sinta-se à vontade para abrir um **pull request**. Melhoria de código, animações, sons ou novos recursos são sempre bem-vindos!
+
+## 📝 **Licença**
+Este projeto está licenciado sob a **Licença MIT** - consulte o arquivo [LICENSE](LICENSE) para mais informações.
