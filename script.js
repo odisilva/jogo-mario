@@ -29,7 +29,7 @@ const loop = setInterval(() => {
 
         mario.style.bottom = `${marioPosition}px`; // Define a posição do Mario
 
-        mario.src = './imagens/game-over.png'; // Muda a imagem do Mario para "game-over"
+        mario.src = './img/game-over.png'; // Muda a imagem do Mario para "game-over"
         mario.style.width = '75px'; // Reduz o tamanho do Mario
         mario.style.margin.left = '50px'; // Alinha o Mario
 
